@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-1 px-4 py-2 font-medium rounded-lg tracking-tight;
+  }
+
+  .btn-primary {
+    @apply bg-black hover:bg-black/75 text-white;
+  }
+
+  .btn-text {
+    @apply text-black bg-transparent hover:font-semibold;
+  }
+
+  .partners-logo {
+    @apply w-auto h-10;
+  }
+
+  .tag {
+    @apply text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight;
+  }
+
+  .section-title {
+    @apply text-center text-3xl md:text-5xl font-bold tracking-tighter md:leading-[54px] bg-gradient-to-b from-black to-[#10d4ee] text-transparent bg-clip-text;
+  }
+
+  .section-description {
+    @apply text-center text-base md:text-xl leading-[30px] tracking-tight text-[#010D3E];
+  }
+
+  .section-wrapper {
+    @apply max-w-[540px] mx-auto;
+  }
+
+  .card {
+    @apply p-10 border border-[#524c4c]/60 rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
+  }
+}
